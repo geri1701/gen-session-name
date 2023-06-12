@@ -79,7 +79,7 @@ where
     })
 }
 
-fn rand_name<'a>(input: &'a [String]) -> &'a str {
+fn rand_name(input: &[String]) -> &str {
     let index = rand::thread_rng().gen_range(0..input.len());
     &input[index]
 }
